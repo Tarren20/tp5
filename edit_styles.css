@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+	  
+h1 {
+  font-family: 'Audiowide', cursive;
+  text-align: center;
+}
+h2 {
+  font-family: 'Audiowide', cursive;
+  text-align: center;
+}
+
+img {
+  width: 200px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border: double 5px;
+}
+
+#header {
+  width: auto;
+  border: 15px solid blue;
+  padding: 25px;
+  margin: 15px;
+}
+
+li {
+  font-family: 'Special Elite', cursive;
+}
+
+ul ul {
+  list-style-type: circle;
+}
+
+#ingredients {
+	width: auto;
+ padding-bottom: 20px;
+	padding-left: 10px;
+	border: double 5px;
+  border-width: 5px 5px 5px 5px;
+	padding-top: 20px;
+	margin: 20px;
+}
+
+
+#ingredients li { 
+  font-family: 'Special Elite', cursive;
+ border-style: double 15px;
+  border-width: thick;
+
+}
+
+#ingredients li span {
+  font-style: italic;
+  color: #ADD8E6;
+}
+h4 {
+  font-family: 'Special Elite', cursive;
+}
+p {
+  font-family: 'Special Elite', cursive;
+}
+#highlight {
+  background-color: #ECECEC;
+}
+
+#equipment {
+	width: auto;
+   padding-bottom: 20px;
+	padding-left: 10px;
+	border: double 5px;
+  border-width: 5px 5px 5px 5px;
+	padding-top: 20px;
+	margin: 20px;
+}
+
+	
+#directions {
+	width: auto;
+  padding-bottom: 20px;
+	padding-left: 10px;
+	border: double 5px;
+  border-width: 5px 5px 5px 5px;
+	padding-top: 20px;
+	margin: 20px;
+}
+		
+@media only screen and (orientation: landscape) {
+	#directions {
+		width: 30%;
+		height: 350px;
+		padding: 2px;
+		float:left;
+		display: table-row;
+		text-align: center;
+		}
+	#source {
+		margin: auto;
+		float: inherit;
+		display: block;
+	}
+	#ingredients {
+		width: 30%;
+		height: 350px;
+		padding: 2px;
+		float: left;
+		display: table-row;
+		text-align: center;
+		
+	}
+	#equipment{
+		width: 30%;
+		height: 350px;
+		padding: 3px;
+		float: left;
+		text-align: center;
+		display: table-row;
+		
+	}
+	@media only screen and (orientation: portrait) {
+		#directions {
+			width: 100%;
+		padding: 2px;
+		
+		}
+	#ingredients {
+		width: 100%;
+		padding: 2px;
+		
+	}
+	#equipment{
+		width: 100%;
+		padding: 2px;
+		
+		
+	}
