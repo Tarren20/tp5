@@ -87,7 +87,10 @@ p {
   height: auto;
 }
 
-
+#new {
+  text-align:center;
+  
+}
 
 #ingredients.hide {
   height:50px
