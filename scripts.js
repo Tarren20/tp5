@@ -1,22 +1,26 @@
 window.onload = function() {
  document.getElementById('header_s').style.fontSize = '50px'
-}
-
-window.onclick = function () {
-   document.getElementById('header_s').style.color = 'lightblue'
-   }
-
-list = document.querySelectorAll("h4");
-  console.log(list);
-  list.item(0).addEventListener("click", function() {
-    document.querySelector('#ingredients_list').classList.toggle('hide');
-  });
-
-  list.item(1).addEventListener("click", function() {
-    document.querySelector('#equipment_list').classList.toggle('hide');
-  });
-
-  list.item(2).addEventListener("click", function() {
-    document.querySelector('#highlight').classList.toggle('hide');
-  });
 };
+
+Click = document.querySelector("#header h1");
+  Click.onclick = function () {
+  Click.classList.toggle("click");
+};
+
+list_0 = document.querySelector("div#ingredients");
+list_0.onclick = function () {
+  list_0.classList.toggle("hide");
+};
+
+list_1 = document.querySelector("div#equipment");
+list_1.onclick = function () {
+  list_1.classList.toggle("hide");
+};
+
+list_2 = document.querySelector("div#directions");
+list_2.onclick = function () {
+  list_2.classList.toggle("hide");
+};
+
+var element = document.getElementById("new");
+element.innerHTML = "By:Tarren McDaniel";

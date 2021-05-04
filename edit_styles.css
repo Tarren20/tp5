@@ -21,6 +21,9 @@ img {
 	margin-right: auto;
 	border: double 5px;
 }
+#header h1.click {
+  color: lightblue;
+}
 
 #header {
   width: auto;
@@ -45,6 +48,8 @@ ul ul {
   border-width: 5px 5px 5px 5px;
 	padding-top: 20px;
 	margin: 20px;
+  height:auto;
+  overflow: hidden;
 }
 
 
@@ -58,6 +63,7 @@ ul ul {
 #ingredients li span {
   font-style: italic;
   color: #ADD8E6;
+  
 }
 h4 {
   font-family: 'Special Elite', cursive;
@@ -77,11 +83,24 @@ p {
   border-width: 5px 5px 5px 5px;
 	padding-top: 20px;
 	margin: 20px;
+  overflow: hidden;
+  height: auto;
 }
 
-.hide {
-  display:none;
+
+
+#ingredients.hide {
+  height:50px
 }
+
+#equipment.hide {
+  height:50px
+}
+
+#directions.hide {
+  height:50px
+}
+
 	
 #directions {
 	width: auto;
@@ -91,29 +110,34 @@ p {
   border-width: 5px 5px 5px 5px;
 	padding-top: 20px;
 	margin: 20px;
+  height: auto;
+  overflow: hidden;
 }
 		
-@media only screen and (orientation: landscape) {
+@media (orientation:landscape) {
 	#directions {
 		width: 30%;
-		height: 350px;
 		padding: 2px;
 		float:left;
 		display: table-row;
 		text-align: center;
+    overflow: hidden;
+    height: auto;
 		}
 	#source {
 		margin: auto;
 		float: inherit;
 		display: block;
+    
 	}
 	#ingredients {
 		width: 30%;
-		height: 350px;
 		padding: 2px;
 		float: left;
 		display: table-row;
 		text-align: center;
+    overflow: hidden;
+    height: auto;
 		
 	}
 	#equipment{
@@ -123,22 +147,30 @@ p {
 		float: left;
 		text-align: center;
 		display: table-row;
+    overflow: hidden;
+    height: auto;
 		
 	}
-	@media only screen and (orientation: portrait) {
+	@media screen and (max-width:575px) {
 		#directions {
 			width: 100%;
 		padding: 2px;
+      overflow: hidden;
+      height: auto;
 		
 		}
 	#ingredients {
 		width: 100%;
 		padding: 2px;
+    overflow: hidden;
+    height: auto;
 		
 	}
 	#equipment{
 		width: 100%;
 		padding: 2px;
+    overflow: hidden;
+    height: auto;
 		
 		
 	}
